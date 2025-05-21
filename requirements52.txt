@@ -1,18 +1,20 @@
 # To activate this run
 #
-# pip install -r requirements.txt
-# python -m django --version
+#   python -m venv .ve52
+#   source .ve52/bin/activate
+#   python --version
+#   pip install -r requirements52.txt
+#   python -m django --version
 #
-# On a Macintosh this should be python3 and pip3
-#
+
 Django==5.2
 
 # If you want to use MySQL, and are not running on PythonAnywhere,
-# uncomment the following line you might need to install pre-requisite
+# comment the following line out or you might need to install pre-requisite
 # libraries before mysqlclient will work - instructions are at
 #   https://pypi.org/project/mysqlclient/
 
-# mysqlclient==2.1.7
+mysqlclient==2.1.7; sys_platform != 'darwin'
 
 # Other requirments - frozen to a version to simplify tech support
 asgiref==3.8.1
