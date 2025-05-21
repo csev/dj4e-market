@@ -50,7 +50,7 @@ If you are running locally, you can keep using SQLite.
 To use MySQL, first go to the `Databases` tab in PythonAnywhere. Make a MySQL database
 named `mkt` and choose a name and password and write them down.
 
-(8) Edit `~/django_projects/market/market/settings.py` and find the existing
+Edit `~/django_projects/market/market/settings.py` and find the existing
 value for the `DATABASES` variable and comment it out.
 
     # DATABASES = {
@@ -80,6 +80,10 @@ to match the values for your database.
 
 Once you have made the changes to `~/django_projects/market/market/settings.py` 
 run `python manage.py check` until there are no errors.
+
+If you are installing this to be submitted to the autograder - make sure to launch the
+autograder and check if there are additional requirements like adding a particular
+adminstrator user or setting a code string for the autograder.
 
 Once `check` works you will need to run your migrations and make a new
 administrator account.  Again if you encounter any error in these commands
@@ -115,3 +119,29 @@ your various projects on PythonAnywhere.  Make sure to reload under the Web tab 
 every file or configuration change.
 
 Once this is done reload your web application and navigate to your application.
+
+Testing your Application
+------------------------
+
+Once your application starts and is running, you can enter a few URLs in your browser
+to check how much is working.
+
+    https://your-account.pythonanywhere.com/
+
+Will should show a simple welcome page - we will replace this later.
+
+    https://your-account.pythonanywhere.com/home
+
+Will show the same simple welcome page - we will keep this throughout the series of assignments
+
+    https://your-account.pythonanywhere.com/favicon.ico
+
+Will show a small "favicon" with "4E" and a blue background - you will replace this later
+
+    https://your-account.pythonanywhere.com/admin
+
+Will allow you to log in and test your administrator account and password and
+show a few Django internal tables.
+
+
+
