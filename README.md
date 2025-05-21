@@ -24,8 +24,14 @@ The Python version for Django 5.2 should be at least `3.10`.  It will most likel
     pip install -r requirements52.txt
     python -m django --version
 
-Your Django version should be `5.2` or later.  To make sure you have your depenencies
-correct run
+Your Django version should be `5.2` or later.
+
+You will notice that in this project, the project-wide `settings.py` and global
+`urls.py` is in a folder called `config` not `market` - this is pretty easy and many
+developers find it less confusing that using the project folder name as the project
+configuration folder name.
+
+To make sure you have your depenencies correct run
 
     python manage.py check
 
@@ -49,7 +55,6 @@ If you are running locally, you can keep using SQLite.
 
 To use MySQL, first go to the `Databases` tab in PythonAnywhere. Make a MySQL database
 named `mkt` and choose a name and password and write them down.
-
 Edit `~/django_projects/market/config/settings.py` and find the existing
 value for the `DATABASES` variable and comment it out.
 
