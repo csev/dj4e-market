@@ -14,7 +14,7 @@ Django==5.2
 # libraries before mysqlclient will work - instructions are at
 #   https://pypi.org/project/mysqlclient/
 
-mysqlclient==2.1.7; sys_platform != 'darwin'
+mysqlclient==2.2.1; sys_platform != 'darwin'
 
 # Other requirments - frozen to a version to simplify tech support
 asgiref==3.8.1

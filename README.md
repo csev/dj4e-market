@@ -13,7 +13,7 @@ Checkout this repository:
     cd ~/django_projects   # Or wherever if you are developing locally
     git clone https://github.com/csev/dj4e-market.git market
     cd market
-    python -m venv .ve52
+    python3.10 -m venv .ve52
     source .ve52/bin/activate
     python --version
 
