@@ -106,10 +106,10 @@ Edit the `WGSI configuration file` and replace it with the following:
     import os
     import sys
 
-    path = os.path.expanduser('~/django_projects/-market')
+    path = os.path.expanduser('~/django_projects/market')
     if path not in sys.path:
         sys.path.insert(0, path)
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'market.settings'
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'config.settings'
     from django.core.wsgi import get_wsgi_application
     from django.contrib.staticfiles.handlers import StaticFilesHandler
     application = StaticFilesHandler(get_wsgi_application())
