@@ -50,7 +50,7 @@ If you are running locally, you can keep using SQLite.
 To use MySQL, first go to the `Databases` tab in PythonAnywhere. Make a MySQL database
 named `mkt` and choose a name and password and write them down.
 
-Edit `~/django_projects/market/market/settings.py` and find the existing
+Edit `~/django_projects/market/config/settings.py` and find the existing
 value for the `DATABASES` variable and comment it out.
 
     # DATABASES = {
@@ -61,14 +61,14 @@ value for the `DATABASES` variable and comment it out.
     # }
 
 Add an entry to point Django at your newly created MySQL database.  In this example,
-your PythonAnywhere account is `drchuck` and the database you created is `mkt` and
+your PythonAnywhere account is `drchuck` and the database you created is `market` and
 the password you set for the database is `phone_153742`.   Change the sample values below
 to match the values for your database.
 
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'drchuck$ads',
+            'NAME': 'drchuck$market',
             'USER': 'drchuck',
             'PASSWORD': 'phone_153742',
             'HOST': 'drchuck.mysql.pythonanywhere-services.com',
@@ -78,7 +78,7 @@ to match the values for your database.
         }
     }
 
-Once you have made the changes to `~/django_projects/market/market/settings.py` 
+Once you have made the changes to `~/django_projects/market/config/settings.py` 
 run `python manage.py check` until there are no errors.
 
 If you are installing this to be submitted to the autograder - make sure to launch the
