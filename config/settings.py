@@ -20,6 +20,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 APP_NAME = 'Chucks Marketplace'   # Change
 
+DJ4E_CODE = '42'
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-yb3=cy&k285b#=!h42%bf+g*07v4lrr+l)fj+_tf1e348fpnkj"
 
@@ -27,7 +29,6 @@ SECRET_KEY = "django-insecure-yb3=cy&k285b#=!h42%bf+g*07v4lrr+l)fj+_tf1e348fpnkj
 DEBUG = True
 
 ALLOWED_HOSTS = [ '*' ]
-
 
 # Application definition
 
