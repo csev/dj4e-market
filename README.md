@@ -26,9 +26,13 @@ If the output is as follows, you already have a `.ve52` virtual environment:
     lrwxrwxrwx 1 dj4e registered_users    3 May 21 02:14 lib64 -> lib
     -rw-rw-r-- 1 dj4e registered_users   76 May 21 02:19 pyvenv.cfg
 
-If you don't already have a Django 5.2 virtual environment use the following commands.
-We use the `deactivate` command to make sure t exit any virtual environment your
-shell might be using.  It is OK for the `deactivate` command to fail, it just means
+If you don't already have a Django 5.2 virtual environment use the following commands
+to create a new Django 5.2 environment.
+We start with the `deactivate` command to make sure t0 exit any virtual environment your
+shell might be using.  We don't want to build out Django 5.2 environment by extending
+an earlier virtual envionment (i.e. like django42).
+
+It is OK for the `deactivate` command below to fail, it just means
 that your shell is not in a virtual environment.
 
     cd ~
