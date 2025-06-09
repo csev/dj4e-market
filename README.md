@@ -8,17 +8,54 @@ marketplace assignments on the www.dj4e.com web site.
 Installing this on PythonAnywhere
 ---------------------------------
 
-Checkout this repository:
+Check if you already have a Django 5.2 virtual environment on your account:
 
-    cd ~/django_projects   # Or wherever if you are developing locally
+    cd ~
+    ls -l ~/.ve52   
+
+If the output is as follows you need to make a Django 5.2 virtual environment
+
+    ls: cannot access '/home/dj4e/.ve52': No such file or directory
+
+If the output is as follows, you already have a `.ve52` virtual environment:
+
+    total 16
+    drwxrwxr-x 2 dj4e registered_users 4096 May 21 02:28 bin
+    drwxrwxr-x 2 dj4e registered_users 4096 May 21 02:14 include
+    drwxrwxr-x 4 dj4e registered_users 4096 May 21 02:14 lib
+    lrwxrwxrwx 1 dj4e registered_users    3 May 21 02:14 lib64 -> lib
+    -rw-rw-r-- 1 dj4e registered_users   76 May 21 02:19 pyvenv.cfg
+
+If you don't already have a Django 5.2 virtual environment use the following commands.
+We use the `deactivate` command to make sure t exit any virtual environment your
+shell might be using.  It is OK for the `deactivate` command to fail, it just means
+that your shell is not in a virtual environment.
+
+    cd ~
+    deactivate    # You don't want to be in a virtua environment when making a new one
+    python3.10 -m venv .ve52
+    source ~/.ve52/bin/activate
+
+If you already have a `.ve52` you can just activate it:
+
+    cd ~
+    deactivate    # You don't want to be in a virtua environment when making a new one
+    source ~/.ve52/bin/activate
+
+At this point your prompt should indicate that you are in the `.ve52` virtual environment
+and look like this:
+
+    (.ve52) 14:15 ~ $
+
+Once in the `.ve52` environment, checkout this repository:
+
+    cd ~/django_projects  
     git clone https://github.com/csev/dj4e-market.git market
     cd market
-    python3.10 -m venv .ve52
-    source .ve52/bin/activate
     python --version
 
 The Python version for Django 5.2 should be at least `3.10`.  It will most likely be
-`3.12` or later.  Once you verify your python version is correct, run:
+`3.12` or later.  Once you verify your Python version is correct, run:
 
     pip install --upgrade pip
     pip install -r requirements52.txt
@@ -27,11 +64,11 @@ The Python version for Django 5.2 should be at least `3.10`.  It will most likel
 Your Django version should be `5.2` or later.
 
 You will notice that in this project, the project-wide `settings.py` and global
-`urls.py` is in a folder called `config` not `market` - this is pretty easy and many
-developers find it less confusing that using the project folder name as the project
+`urls.py` is in a folder called `market/config` not `market/market`. 
+Many developers find it less confusing that using the project folder name as the project
 configuration folder name.
 
-To make sure you have your depenencies correct run
+To make sure you have your dependencies have been installed correctly, run:
 
     python manage.py check
 
@@ -42,8 +79,8 @@ Until you see output like:
     Using registration/login.html as the login template
     System check identified no issues (0 silenced).
 
-*Important*: If you get any kind of traceback, you need to fix it before continuing.
-You should run `python manage.py check` until it has no errors.
+*Important*: If you get any kind of traceback, you need to stop and fix any errors before continuing.
+You should not continue with these instructions until `python manage.py check` runs without errors.
 
 Running on PythonAnywhere
 -------------------------
