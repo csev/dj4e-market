@@ -174,7 +174,7 @@ to check how much is working.
 
     https://your-account.pythonanywhere.com/
 
-Will should show a simple welcome page - we will replace this later.
+Will should show a simple welcome page - we will replace this in a later assignment.
 
     https://your-account.pythonanywhere.com/home
 
