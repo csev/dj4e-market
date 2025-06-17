@@ -1,7 +1,7 @@
 # To run this, you should have a virtual environment with Django 5.2.
-# TO activate an existing environment, use
+# To activate an existing environment, use
 #
-#   source ~.ve52/bin/activate
+#   source ~/.ve52/bin/activate
 #   
 # If this fails, you need to create and configure a Django 5.2 environment
 # as follows:
