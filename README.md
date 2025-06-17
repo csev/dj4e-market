@@ -6,7 +6,8 @@ This is a starter repository to be used to set up the series of
 marketplace assignments on the www.dj4e.com web site.
 
 There is a vider walkthrough of these instructions 
-at <a href="https://youtu.be/a3CODtpZCLM" target="_blank">Installing the initial version of DJ4E Marketplace from github</a>
+at <a href="https://youtu.be/a3CODtpZCLM" target="_blank">Installing the initial
+version of DJ4E Marketplace from github</a>
 
 Installing this on PythonAnywhere
 ---------------------------------
