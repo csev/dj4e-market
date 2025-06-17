@@ -95,7 +95,7 @@ SQLite and your application stores too much data it will start to slow down.
 If you are running locally, you can keep using SQLite.
 
 To use MySQL, first go to the `Databases` tab in PythonAnywhere. Make a MySQL database
-named `mkt` and choose a name and password and write them down.
+named `market` and choose a name and password and write them down.
 Edit `~/django_projects/market/config/settings.py` and find the existing
 value for the `DATABASES` variable and comment it out.
 
