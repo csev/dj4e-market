@@ -90,12 +90,14 @@ Running on PythonAnywhere
 -------------------------
 
 We are going to switch your application on PythonAnywhere from using an
-SQLite database to a MySQL database for the rest of this course.  If you keep running
+SQLite database to a MySQL database for the rest of this course.  If you keep using
 SQLite and your application stores too much data it will start to slow down.
-If you are running locally, you can keep using SQLite.
 
-To use MySQL, first go to the `Databases` tab in PythonAnywhere. Make a MySQL database
-named `market` and choose a name and password and write them down.
+To use MySQL, first go to the `Databases` tab in PythonAnywhere. Set a database password
+that is different from your PythonAnywhwere password and different from any password
+you use on other other system.
+
+Make a MySQL database named `market` and choose a name and password and write them down.
 Edit `~/django_projects/market/config/settings.py` and find the existing
 value for the `DATABASES` variable and comment it out.
 
@@ -106,10 +108,10 @@ value for the `DATABASES` variable and comment it out.
     #     }
     # }
 
-Add an entry to point Django at your newly created MySQL database.  In this example,
-your PythonAnywhere account is `drchuck` and the database you created is `market` and
-the password you set for the database is `phone_153742`.   Change the sample values below
-to match the values for your database.
+Add an entry to point Django at your newly created MySQL database.  In this example
+DATABASES value, your PythonAnywhere account is `drchuck` and the database you
+created is `market` and the password you set for the database is `phone_153742`.
+Change the sample values below to match the values for your MySQL database.
 
     DATABASES = {
         'default': {
@@ -138,6 +140,7 @@ stop and figure out the error before proceeding.
     cd ~/django_projects/market
     python manage.py makemigrations      # Probably will say "no changes"
     python manage.py migrate
+
     python manage.py createsuperuser
 
 At this point you need to configure your PythonAnywhere `Web` application to
