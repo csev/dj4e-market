@@ -28,7 +28,7 @@ If the output is as follows, you already have a `.ve52` virtual environment:
 
 If you don't already have a Django 5.2 virtual environment use the following commands
 to create a new Django 5.2 environment.
-We start with the `deactivate` command to make sure t0 exit any virtual environment your
+We start with the `deactivate` command to make sure to exit any virtual environment your
 shell might be using.  We don't want to build out Django 5.2 environment by extending
 an earlier virtual envionment (i.e. like django42).
 
@@ -43,7 +43,7 @@ that your shell is not in a virtual environment.
 If you already have a `.ve52` you can just activate it:
 
     cd ~
-    deactivate    # You don't want to be in a virtua environment when making a new one
+    deactivate    # You don't want to be in a virtual environment when making a new one
     source ~/.ve52/bin/activate
 
 At this point your prompt should indicate that you are in the `.ve52` virtual environment
