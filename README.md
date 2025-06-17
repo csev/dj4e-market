@@ -36,7 +36,7 @@ It is OK for the `deactivate` command below to fail, it just means
 that your shell is not in a virtual environment.
 
     cd ~
-    deactivate    # You don't want to be in a virtua environment when making a new one
+    deactivate    # You don't want to be in a virtual environment when making a new one
     python3.10 -m venv .ve52
     source ~/.ve52/bin/activate
 
