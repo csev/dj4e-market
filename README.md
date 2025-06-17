@@ -67,7 +67,7 @@ The Python version for Django 5.2 should be at least `3.10`.  It will most likel
 
 Your Django version should be `5.2` or later.
 
-You will notice that in this project, the project-wide `settings.py` and global
+You will notice that in this project, the project-wide `settings.py` and project-wide
 `urls.py` is in a folder called `market/config` not `market/market`. 
 Many developers find it less confusing that using the project folder name as the project
 configuration folder name.
@@ -99,7 +99,7 @@ you use on other other system.
 
 Make a MySQL database named `market` and choose a name and password and write them down.
 Edit `~/django_projects/market/config/settings.py` and find the existing
-value for the `DATABASES` variable and comment it out.
+SQLite value for the `DATABASES` variable and comment it out.
 
     # DATABASES = {
     #     'default': {
@@ -108,7 +108,7 @@ value for the `DATABASES` variable and comment it out.
     #     }
     # }
 
-Add an entry to point Django at your newly created MySQL database.  In this example
+Add (or update) an entry to point Django at your newly created MySQL database.  In this example
 DATABASES value, your PythonAnywhere account is `drchuck` and the database you
 created is `market` and the password you set for the database is `phone_153742`.
 Change the sample values below to match the values for your MySQL database.
@@ -127,9 +127,13 @@ Change the sample values below to match the values for your MySQL database.
     }
 
 Once you have made the changes to `~/django_projects/market/config/settings.py` 
-run `python manage.py check` until there are no errors.
+run 
 
-If you are installing this to be submitted to the autograder - make sure to launch the
+    python manage.py check
+
+until there are no errors.
+
+If you are installing this to be submitted to the DJ4E autograder - make sure to launch the
 autograder and check if there are additional requirements like adding a particular
 adminstrator user or setting a code string for the autograder.
 
