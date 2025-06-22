@@ -7,7 +7,7 @@ marketplace assignments on the www.dj4e.com web site.
 
 There is a video walkthrough of these instructions 
 at <a href="https://youtu.be/a3CODtpZCLM" target="_blank">Installing the initial
-version of DJ4E Marketplace from github</a>
+version of DJ4E Marketplace from github</a>.
 
 Installing this on PythonAnywhere
 ---------------------------------
@@ -41,7 +41,7 @@ that your shell is not in a virtual environment.
 
     cd ~
     deactivate    # You don't want to be in a virtual environment when making a new one
-    python3.10 -m venv .ve52
+    python3.11 -m venv .ve52
     source ~/.ve52/bin/activate
 
 If you already have a `.ve52` you can just activate it:
@@ -62,7 +62,7 @@ Once in the `.ve52` environment, checkout this repository:
     cd market
     python --version
 
-The Python version for Django 5.2 should be at least `3.10`.  It will most likely be
+The Python version for Django 5.2 should be at least `3.11`.  It will most likely be
 `3.12` or later.  Once you verify your Python version is correct, run:
 
     pip install --upgrade pip
@@ -96,6 +96,10 @@ Running on PythonAnywhere
 We are going to switch your application on PythonAnywhere from using an
 SQLite database to a MySQL database for the rest of this course.  If you keep using
 SQLite and your application stores too much data it will start to slow down.
+
+**Note** If you are running this on a local computer you can just use SQLite as it is
+very fast when run on a real hard drive.  If you are installing locally, skip this
+section and go to "Initializing your Database".
 
 To use MySQL, first go to the `Databases` tab in PythonAnywhere. Set a database password
 that is different from your PythonAnywhwere password and different from any password
@@ -140,6 +144,9 @@ until there are no errors.
 If you are installing this to be submitted to the DJ4E autograder - make sure to launch the
 autograder and check if there are additional requirements like adding a particular
 adminstrator user or setting a code string for the autograder.
+
+Initializing your Database
+--------------------------
 
 Once `check` works you will need to run your migrations and make a new
 administrator account.  Again if you encounter any error in these commands
