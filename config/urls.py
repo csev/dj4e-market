@@ -23,7 +23,6 @@ import os
 
 urlpatterns = [
     path('', include('home.urls')),
-    path('home/', include('home.urls')),
     path("admin/", admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
     re_path(r'^oauth/', include('social_django.urls', namespace='social')),
