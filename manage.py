@@ -5,6 +5,19 @@ import sys
 
 
 def main():
+
+    # Special PythonAnywhere check to mention not to use runserver
+    pythonanywhere = os.getenv('PYTHONANYWHERE_DOMAIN')
+    if pythonanywhere is not None and 'runserver' in sys.argv :
+        print('')
+        print('*********')
+        print('You should not use "runserver" on PythonAnywhere - use ')
+        print('   python manage.py check')
+        print('and reload your application under the Web tab or in the file editor')
+        print('*********')
+        quit()
+    # End of PythonAnywhere check
+
     """Run administrative tasks."""
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
     try:
