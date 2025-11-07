@@ -12,50 +12,16 @@ version of DJ4E Marketplace from github</a>.
 Installing this on PythonAnywhere
 ---------------------------------
 
-Check if you already have a Django 5.2 virtual environment on your account:
-
-    cd ~
-    ls -l ~/.ve52   
-
-If the output is as follows you need to make a Django 5.2 virtual environment
-
-    ls: cannot access '/home/dj4e/.ve52': No such file or directory
-
-If the output is as follows, you already have a `.ve52` virtual environment:
-
-    total 16
-    drwxrwxr-x 2 dj4e registered_users 4096 May 21 02:28 bin
-    drwxrwxr-x 2 dj4e registered_users 4096 May 21 02:14 include
-    drwxrwxr-x 4 dj4e registered_users 4096 May 21 02:14 lib
-    lrwxrwxrwx 1 dj4e registered_users    3 May 21 02:14 lib64 -> lib
-    -rw-rw-r-- 1 dj4e registered_users   76 May 21 02:19 pyvenv.cfg
-
-If you don't already have a Django 5.2 virtual environment use the following commands
-to create a new Django 5.2 environment.
-We start with the `deactivate` command to make sure to exit any virtual environment your
-shell might be using.  We don't want to build out Django 5.2 environment by extending
-an earlier virtual envionment (i.e. like django42).
-
-It is OK for the `deactivate` command below to fail, it just means
-that your shell is not in a virtual environment.
-
-    cd ~
-    deactivate    # You don't want to be in a virtual environment when making a new one
-    python3.11 -m venv .ve52
-    source ~/.ve52/bin/activate
-
-If you already have a `.ve52` you can just activate it:
-
-    cd ~
-    deactivate    # You don't want to be in a virtual environment when making a new one
-    source ~/.ve52/bin/activate
-
-At this point your prompt should indicate that you are in the `.ve52` virtual environment
-and look like this:
+If you are installing this in the middle of taking the DJ4E course, you should
+already have a virtual environment set up in your bash console and in your web
+tab. Open a bash console and it should look like this:
 
     (.ve52) 14:15 ~ $
 
-Once in the `.ve52` environment, checkout this repository:
+If you have no Django 5.2 virtual envronment set up, please see the install instructions
+at www.dj4e.com.
+
+With a properly configured virtual environment in place, checkout this repository:
 
     cd ~/django_projects  
     git clone https://github.com/csev/dj4e-market.git market
@@ -65,6 +31,7 @@ Once in the `.ve52` environment, checkout this repository:
 The Python version for Django 5.2 should be at least `3.11`.  It will most likely be
 `3.12` or later.  Once you verify your Python version is correct, run:
 
+    cd ~/django_project/market
     pip install --upgrade pip
     pip install -r requirements52.txt
     python -m django --version
@@ -83,7 +50,6 @@ To make sure you have your dependencies have been installed correctly, run:
 Until you see output like:
 
     python manage.py check
-    When you want to use social login, please see dj4e-samples/github_settings-dist.py
     Using registration/login.html as the login template
     System check identified no issues (0 silenced).
 
