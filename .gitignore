@@ -2,8 +2,8 @@
 __pycache__
 *.swp
 *.sqlite3
-github_settings.py
 database_settings.py
 
 db.save
 .ve*
+migrations
