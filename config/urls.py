@@ -18,6 +18,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import include, re_path
+from django.contrib.auth import views as auth_views
 from django.views.static import serve
 import os
 
