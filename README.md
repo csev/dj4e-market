@@ -158,7 +158,7 @@ other than the default of 'Chucks Marketplace".  It does not have to be your nam
 other than the default.
 
 Once this is done reload your web application and navigate to your application and verify the name
-in the top menu has chaged.
+in the top menu has changed.
 
 Testing your Application
 ------------------------
