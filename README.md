@@ -150,6 +150,16 @@ every file or configuration change.
 
 Once this is done reload your web application and navigate to your application.
 
+Changing the Name of Your Application
+-------------------------------------
+
+In the `market/config/settings.py` there is a `APP_NAME` variable.   Give your application a name
+other than the default of 'Chucks Marketplace".  It does not have to be your name - just something
+other than the default.
+
+Once this is done reload your web application and navigate to your application and verify the name
+in the top menu has chaged.
+
 Testing your Application
 ------------------------
 
