@@ -154,11 +154,25 @@ Changing the Name of Your Application
 -------------------------------------
 
 In the `market/config/settings.py` there is a `APP_NAME` variable.   Give your application a name
-other than the default of 'Chucks Marketplace".  It does not have to be your name - just something
+other than the default of "Chuck's Marketplace".  It does not have to be your name - just something
 other than the default.
 
 Once this is done reload your web application and navigate to your application and verify the name
 in the top menu has changed.
+
+Setting up Git (Source Code Managment) On PythonAnywhere
+--------------------------------------------------------
+
+As you go through all the assignments based on this starting code we will use the 
+`git` version management at the end of each assignment so if things go badly, you can
+"go back in time" to a known good version and start over working on one assignment.
+
+To use `git` you must first tell `git` who you are so that it can mark each of your changes.
+Run the following commands to configure `git` in your PythonAnywhere account:
+
+    cd ~/django_projects/market
+    git config --global user.email "youremail@example.com"
+    git config --global user.name "Your name"
 
 Testing your Application
 ------------------------
