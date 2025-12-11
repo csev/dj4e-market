@@ -202,7 +202,8 @@ Resetting Your Database
 
 If you encounter problems with migrations or need to start with a fresh database,
 you can use the automated database reset script. This is particularly useful when
-switching between SQLite and MySQL, or when migration files become corrupted.
+you have made a series of changes to `models.py` and migration files become confused
+causing `makemigrations` to fail.
 
 For detailed instructions on how to reset your database and migration files, see
 [DB_RESET.md](DB_RESET.md).
