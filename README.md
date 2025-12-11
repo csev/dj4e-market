@@ -197,5 +197,19 @@ Will show a small "favicon" with "4E" and a blue background - you will replace t
 Will allow you to log in and test your administrator account and password and
 show a few Django internal tables.
 
+Resetting Your Database
+------------------------
+
+If you encounter problems with migrations or need to start with a fresh database,
+you can use the automated database reset script. This is particularly useful when
+switching between SQLite and MySQL, or when migration files become corrupted.
+
+For detailed instructions on how to reset your database and migration files, see
+[DB_RESET.md](DB_RESET.md).
+
+The reset script will:
+- Drop all tables in your database
+- Delete all migration files (except `__init__.py`)
+- Allow you to start fresh with `makemigrations` and `migrate`
 
 
