@@ -86,9 +86,3 @@ Here is an example execution of this process:
 Depending on how far along in the Marketplace application you are, there may
 be more tables dropped and migrations deleted.
 
-
-<script>
-var d= new Date();
-var code = "42"+((Math.floor(d.getTime()/1234567)*123456)+42)
-document.getElementById("dj4e-code").innerHTML = code;
-</script>
