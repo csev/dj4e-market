@@ -64,5 +64,5 @@ social-auth-core==4.5.6
 soupsieve==2.6
 sqlparse==0.5.3
 typing_extensions==4.13.1
-urllib3==2.3.0
+urllib3==2.6.2
 zipp==3.21.0
