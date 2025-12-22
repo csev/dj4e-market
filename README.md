@@ -23,8 +23,8 @@ tab. Open a bash console and it should look like this:
 
     (.ve52) 14:15 ~ $
 
-If you have no Django 5.2 virtual envronment set up, please see the Django 5.2 
-install instructions at www.dj4e.com.
+If you do not have have a Django 5.2 virtual envronment set up, please see the Django 5.2 
+install instructions at [www.dj4e.com](https://www.dj4e.com/assn/dj4e_install52.md).
 
 With a properly configured virtual environment in place, checkout this repository:
 
