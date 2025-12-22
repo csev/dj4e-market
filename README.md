@@ -9,6 +9,11 @@ There is a video walkthrough of these instructions
 at <a href="https://youtu.be/a3CODtpZCLM" target="_blank">Installing the initial
 version of DJ4E Marketplace from github</a>.
 
+In order to keep this application working across multiple versions of Django,
+the default branch of this repository is `django52`.  In the future this will
+allow the repository to simultaneously support multiple versions of Django
+more easily.
+
 Installing this on PythonAnywhere
 ---------------------------------
 
@@ -18,14 +23,15 @@ tab. Open a bash console and it should look like this:
 
     (.ve52) 14:15 ~ $
 
-If you have no Django 5.2 virtual envronment set up, please see the install instructions
-at www.dj4e.com.
+If you have no Django 5.2 virtual envronment set up, please see the Django 5.2 
+install instructions at www.dj4e.com.
 
 With a properly configured virtual environment in place, checkout this repository:
 
     cd ~/django_projects  
     git clone https://github.com/csev/dj4e-market.git market
     cd market
+    git checkout django52
     python --version
 
 The Python version for Django 5.2 should be at least `3.11`.  It will most likely be
@@ -36,7 +42,9 @@ The Python version for Django 5.2 should be at least `3.11`.  It will most likel
     pip install -r requirements52.txt
     python -m django --version
 
-Your Django version should be `5.2` or later.
+Your Django version should be `5.2` or later.   If you are on Django `4.x` or
+`6.x` this repository will likely not work.  Check to see if there are other branches
+that match your version of Django.
 
 You will notice that in this project, the project-wide `settings.py` and project-wide
 `urls.py` is in a folder called `market/config` not `market/market`. 
