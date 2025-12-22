@@ -5,4 +5,5 @@ updates:
     schedule:
       interval: "weekly"
     target-branch: "django52"
-    security-updates-only: true
+    # Disable *version* update PRs for pip
+    open-pull-requests-limit: 0
