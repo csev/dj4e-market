@@ -1,10 +1,8 @@
 version: 2
 updates:
-  - package-ecosystem: pip
+  - package-ecosystem: "pip"
     directory: "/"
     schedule:
-      interval: weekly
-    target-branch: main
-    ignore:
-      - dependency-name: "Django"
-        versions: [">5.2.*"]
+      interval: "weekly"
+    target-branch: "django52"
+    security-updates-only: true
