@@ -6,14 +6,8 @@ This is a starter repository to be used to set up the series of
 marketplace assignments on the www.dj4e.com web site.
 
 There is a video walkthrough of these instructions 
-at <a href="https://youtu.be/a3CODtpZCLM" target="_blank">Installing the initial
+at <a href="https://umsiali.mivideo.it.umich.edu/playlist/dedicated/410698932/1_6058dcqq/1_apzt9xxp" target="_blank">Installing the initial
 version of DJ4E Marketplace from github</a>.
-
-NOTE: As of January 2026, PythonAnywhere <a href="https://blog.pythonanywhere.com/221/"
-target="_blank">removed MySQL from their free accounts</a> used for this course.
-As such we will use SQLite for the marketplace series of applications.  If
-you started with MySQL using a pre-January 2026 PythonAnywhere account you
-can continue to use MySQL.
 
 In order to keep this application working across multiple versions of Django,
 the default branch of this repository is `django52`.  In the future this will
